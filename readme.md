@@ -20,7 +20,7 @@ Initial wireframes for Band-search can be seen below. Wireframes of all key proc
 The app is responsive and was designed to work on mobile, tablet and desktop screens. A friendly popup window appears as users search for artists as information loads to consider choosing a more sustainable travel option.
 
 ## Live Site
-You can access Upbeat Atlas at https://leahborns.github.io/upbeat-atlas-artist-finder-songkick-api-capstone/index.html
+You can access Band-search at https://realnuno.github.io/band-search-api-capstone/
 
 ## Technical
 * The app is built using HTML5, CSS3 and JS 5 and 6.

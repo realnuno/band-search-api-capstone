@@ -2,13 +2,14 @@ var input;
 var cursor;
 var hiddenInput;
 var content = [];
-var lastContent = "", targetContent = "";
+var lastContent = "",
+    targetContent = "";
 var inputLock = false;
 var autoWriteTimer;
 
 var isMobile, isIE;
 
-window.onload = function() {
+window.onload = function () {
 
     isMobile = navigator && navigator.platform && navigator.platform.match(/^(iPad|iPod|iPhone)$/);
 
@@ -77,12 +78,12 @@ window.onload = function() {
 
     if (document.addEventListener) {
 
-        document.addEventListener('touchstart', function(e) {
+        document.addEventListener('touchstart', function (e) {
             clearInterval(autoWriteTimer);
             targetContent = lastContent;
         }, false);
 
-        document.addEventListener('click', function(e) {
+        document.addEventListener('click', function (e) {
             clearInterval(autoWriteTimer);
             targetContent = lastContent;
             hiddenInput.focus();
@@ -92,14 +93,14 @@ window.onload = function() {
             // Input event is buggy on IE, so don't bother
             // (https://msdn.microsoft.com/en-us/library/gg592978(v=vs.85).aspx#feedback)
             // We will use a timer instead (below)
-            hiddenInput.addEventListener('input', function(e) {
+            hiddenInput.addEventListener('input', function (e) {
                 e.preventDefault();
                 targetContent = hiddenInput.value;
                 if (!inputLock) refresh();
 
             }, false);
         } else {
-            setInterval(function() {
+            setInterval(function () {
                 targetContent = hiddenInput.value;
 
                 if (targetContent != lastContent && !inputLock) refresh();
@@ -110,7 +111,7 @@ window.onload = function() {
 
     hiddenInput.value = "";
 
-    autoWriteTimer = setTimeout(function() {
+    autoWriteTimer = setTimeout(function () {
         if (lastContent != "") return;
         targetContent = "search here...";
         refresh();
@@ -125,73 +126,58 @@ window.onload = function() {
 
 
 
+$(document).ready(function () {
+    $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+        disableOn: 700,
+        type: 'iframe',
+        mainClass: 'mfp-fade',
+        removalDelay: 160,
+        preloader: false,
 
-$(document).ready(function() {
-	$('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
-		disableOn: 700,
-		type: 'iframe',
-		mainClass: 'mfp-fade',
-		removalDelay: 160,
-		preloader: false,
+        fixedContentPos: false
+    });
 
-		fixedContentPos: false
-	});
-    
-    
+
     $('.popup-gallery').magnificPopup({
-		delegate: 'a',
-		type: 'image',
-		tLoading: 'Loading image #%curr%...',
-		mainClass: 'mfp-img-mobile',
-		gallery: {
-			enabled: true,
-			navigateByImgClick: true,
-			preload: [0,1] // Will preload 0 - before current, and 1 after the current image
-		},
-		image: {
-			tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
-			titleSrc: function(item) {
-				return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
-			}
-		}
-	});
-    
-    
-    
-    
-    
-    
+        delegate: 'a',
+        type: 'image',
+        tLoading: 'Loading image #%curr%...',
+        mainClass: 'mfp-img-mobile',
+        gallery: {
+            enabled: true,
+            navigateByImgClick: true,
+            preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
+        },
+        image: {
+            tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+            titleSrc: function (item) {
+                return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
+            }
+        }
+    });
 
-   
-    
-    $("input").keydown(function(e) {
+
+
+
+
+
+
+
+
+    $("input").keydown(function (e) {
         e.stopPropagation();
         if (e.keyCode === 13) {
+            $("input").val("");
             e.preventDefault();
-            $('html, body').animate({scrollTop: $('.js--results').offset().top}, 1000);
-            console.log(40);
+            console.log($("input").val());
+            $('html, body').animate({
+                scrollTop: $('.js--results').offset().top
+            }, 1000);
         };
     });
-    
-    
-    
-    
-    $('.js--wp-1').waypoint(function(direction) {
-        $('.js--wp-1').addClass('animated fadeIn');
-    }, {
-        offset: '50%'
-    });
-    
+
+
+
+
+
 });
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
