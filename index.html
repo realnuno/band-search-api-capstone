@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Band Search</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" type="text/css" href="grid.css">
+	<link rel="stylesheet" type="text/css" href="Animate.css">
+	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://unpkg.com/ionicons@4.2.0/dist/ionicons.js"></script>
+	<script src="index.js"></script>
+	<script src="magnific-popup.js"></script>
+</head>
+<body>
+	<header role="banner">
+		<div class="title">
+			<h1>Band Search</h1>
+		</div>
+		
+		<div class="intro-text js--wp">
+				You can find and chase BANDS here!!
+		</div>
+		<div class="search-form">
+	  	  <form>
+			  <div id="container">
+				<ion-icon class="icon-search" name="search"></ion-icon>
+				<div id="input"></div>
+				<input type="text" id="hiddenInput" class="js--scroll-to-results" autocomplete="off"/>
+			  </div> 
+		  </form>
+		</div>
+	</header>
+	
+	<main role="main" class="js--results">
+		
+		<div class="row">
+			<div class="col-6">
+				<div class="box effect1 youtube-video">
+					<a class="popup-youtube" href="http://www.youtube.com/watch?v=0O2aH4XLbto"><img src="Maroon5.jpg"></a>
+					<p><ion-icon class="icon-youtube" name="logo-youtube"></ion-icon><span class="text-video">VEDIO</span></p>
+				</div>
+			</div>
+			<div class="col-6">
+			    <div class="box effect1 band-picture">
+					<img src="Maroon_5_concert.jpg">
+					<p><ion-icon class="icon-images" name="images"></ion-icon><span class="text-picture">PICTURE</span></p>
+				</div>
+			</div>
+		</div>
+		
+		
+		<div class="row">
+            <div class="col-6">
+				<div class="box effect1 concert-when">
+				    <p><ion-icon class="icon-time" name="time"></ion-icon><span class="text-when">WHEN</span></p>
+					<div class="when">
+					   July, 4th 2018<br/>
+					   18:30 EST
+					</div>
+				</div>
+			</div>
+        
+		    <div class="col-6">
+				<div class="box effect1 venue-info">
+					<p><ion-icon class="icon-map" name="map"></ion-icon><span class="text-where">WHERE</span></p>
+					<div class="venue">
+					   <a class="popup-gmaps" href="https://maps.google.com/maps?q=221B+Baker+Street,+London,+United+Kingdom&amp;hl=en&amp;t=v&amp;hnear=221B+Baker+St,+London+NW1+6XE,+United+Kingdom"><span class="venue-name">Royal Farms Arena<br/>201 W Baltimore St, Baltimore, MD 21201</span></a>
+					</div>
+					
+				</div>
+			</div>
+			
+			
+		</div>
+	</main>
+	
+</body>
+</html>
