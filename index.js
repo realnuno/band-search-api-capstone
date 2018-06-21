@@ -60,8 +60,8 @@ $(document).ready(function () {
 
     function displayYoutubeData(data) {
 
-        const videoUrl = `https://www.youtube.com/watch?v=${data.items[5].id.videoId}`
-        const thumbnailUrl = data.items[5].snippet.thumbnails.high.url
+        const videoUrl = `https://www.youtube.com/watch?v=${data.items[0].id.videoId}`
+        const thumbnailUrl = data.items[0].snippet.thumbnails.high.url
 
 
         $(".popup-youtube").attr("href", videoUrl);
