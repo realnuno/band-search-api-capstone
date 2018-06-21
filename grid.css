@@ -57,12 +57,12 @@
 /* Non-mobile, grid */
 @media only screen and (min-width: 640px) {
 	
-	  .intro-text {
+	  .intro-text p{
 		position: absolute;
 		text-align: center;
 		width: 100%;
 		top: 37%;
-		font-size: 35px;
+		font-size: 33px;
 		font-weight: 200;
 	}
 

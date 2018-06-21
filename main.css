@@ -42,8 +42,11 @@ header {
     position: absolute;
     text-align: center;
     width: 100%;
-    top: 40%;
-    font-size: 25px;
+    top: 41%;
+}
+
+.intro-text p {
+	font-size: 25px;
     font-weight: 200;
 }
 
