@@ -63,7 +63,6 @@ $(document).ready(function () {
         const videoUrl = `https://www.youtube.com/watch?v=${data.items[5].id.videoId}`
         const thumbnailUrl = data.items[5].snippet.thumbnails.high.url
 
-        //        console.log(thumbnailUrl);
 
         $(".popup-youtube").attr("href", videoUrl);
         $(".thumbnail").attr("src", thumbnailUrl);
@@ -98,7 +97,6 @@ $(document).ready(function () {
 
     function displayPhotoData(data) {
 
-        //        console.log(data.image_url);
 
         const imgUrl = data.image_url;
 
