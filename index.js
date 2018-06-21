@@ -215,6 +215,7 @@ $(document).ready(function () {
 });
 
 
+<<<<<<< HEAD
 
 
 
@@ -341,3 +342,5 @@ window.onload = function () {
         refresh();
     }, 300);
 }
+=======
+>>>>>>> 3387399e8788136fc25f5b64684a93e53cf659fa

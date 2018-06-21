@@ -226,6 +226,7 @@ a:active {
 
 /* ----------------------------------------------- */
 
+<<<<<<< HEAD
 
 
 
@@ -370,12 +371,16 @@ $blue: #358ecc;
     opacity: 0;
     filter: alpha(opacity=0);
 }
+=======
+>>>>>>> 3387399e8788136fc25f5b64684a93e53cf659fa
 
-#container {
-    font-size: 230%;
-    position: absolute;
-    top: 51%;
+.topcoat-text-input--large {
+    line-height: 35px;
+    width: 250px;
+    font-size: 25px;
+    font-weight: 200;
     letter-spacing: 2px;
+<<<<<<< HEAD
     text-align: center;
     width: 100%;
 }
@@ -388,23 +393,26 @@ $blue: #358ecc;
 .letterContainer {
     display: inline;
     white-space: nowrap;
+=======
+    background-color: rgba(83, 83, 83, 0.46);
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: #fff;
+>>>>>>> 3387399e8788136fc25f5b64684a93e53cf659fa
 }
 
-.letterStatic {
-    display: inline;
+.topcoat-text-input--large:focus{
+    outline: none;
 }
 
-.letterAnimTop {
-    display: inline;
+
+
+#container {
+    font-size: 230%;
     position: absolute;
-    -webkit-animation: dropTop .1s ease;
-    -moz-animation: dropTop .1s ease;
-
-}
-
-.letterAnimBottom {
-    display: inline;
-    position: absolute;
+<<<<<<< HEAD
     -webkit-animation: dropBottom .1s ease;
     -moz-animation: dropBottom .1s ease;
 }
@@ -478,6 +486,16 @@ $blue: #358ecc;
 }
 
 */
+=======
+    width:100%;
+    top: 51%;
+    text-align: center;
+}
+
+
+
+
+>>>>>>> 3387399e8788136fc25f5b64684a93e53cf659fa
 
 /* ----------------------------------------------- */
 
