@@ -230,128 +230,34 @@ a:active {
 
 
 
-#hiddenInput {
-    font-family: 'Roboto Condensed', sans-serif;
-    background-color: #808080;
-    position: absolute;
-    opacity: 0.4;
-    margin-top: -22px;
-    margin-left: -125px;
-    opacity: 0;
-    filter: alpha(opacity=0);
+.topcoat-text-input--large {
+    line-height: 35px;
+	width: 250px;
+    font-size: 25px;
+	font-weight: 200;
+    letter-spacing: 2px;
+	background-color: rgba(83, 83, 83, 0.46);
+	box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+	border: 1px solid #fff;
+	border-radius: 5px;
+	padding: 5px 10px;
+	color: #fff;
 }
+
+.topcoat-text-input--large:focus{
+	outline: none;
+}
+
+
 
 #container {
     font-size: 230%;
     position: absolute;
     top: 51%;
-    letter-spacing: 2px;
     position: absolute;
     text-align: center;
     width: 100%;
 }
-
-#input {
-    display: inline-block;
-    padding-left: 5px;
-}
-
-.letterContainer {
-    display: inline;
-    white-space: nowrap;
-}
-
-.letterStatic {
-    display: inline;
-}
-
-.letterAnimTop {
-    display: inline;
-    position: absolute;
-    -webkit-animation: dropTop .1s ease;
-    -moz-animation: dropTop .1s ease;
-
-}
-
-.letterAnimBottom {
-    display: inline;
-    position: absolute;
-    -webkit-animation: dropBottom .1s ease;
-    -moz-animation: dropBottom .1s ease;
-}
-
-.blink {
-    position: static;
-    top: -5px;
-    -webkit-animation: blink 0.3s ease 0 infinite alternate;
-    -moz-animation: blink 0.3s ease 0 infinite alternate;
-}
-
-@-moz-keyframes blink {
-    from {
-        opacity: 0
-    }
-    to {
-        opactiy: 1
-    }
-}
-
-@-webkit-keyframes blink {
-    from {
-        opacity: 0
-    }
-    to {
-        opactiy: 1
-    }
-}
-
-@-moz-keyframes dropTop {
-    from {
-        -moz-transform: translateX(0) translateY(-20px) translateZ(20px) rotateX(90deg);
-        transform: translateX(0) translateY(-20px) translateZ(20px) rotateX(90deg);
-    }
-
-    to {
-        -moz-transform: translateX(0) translateY(0) translateZ(0) rotateX(0deg);
-        transform: translateX(0) translateY(0) translateZ(0) rotateX(0deg);
-    }
-}
-
-@-moz-keyframes dropBottom {
-    from {
-        -moz-transform: translateY(20px) translateZ(20px) rotateX(-90deg);
-        transform: translateY(20px) translateZ(20px) rotateX(-90deg);
-    }
-
-    to {
-        -moz-transform: rotateX(0deg);
-        transform: rotateX(0deg);
-    }
-}
-
-@-webkit-keyframes dropTop {
-    from {
-        -webkit-transform: translateX(0) translateY(-20px) translateZ(20px) rotateX(90deg);
-    }
-    to {
-        -webkit-transform: translateX(0) translateY(0) translateZ(0) rotateX(0deg);
-    }
-}
-
-@-webkit-keyframes dropBottom {
-    from {
-        -webkit-transform: translateY(20px) translateZ(20px) rotateX(-90deg);
-    }
-    to {
-        -webkit-transform: rotateX(0deg);
-    }
-}
-
-
-
-
-
-
 
 
 
