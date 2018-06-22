@@ -140,12 +140,16 @@ $(document).ready(function () {
 
 
 
-        const eventTime = data[0].datetime;
+        const eventWhen = data[0].datetime;
+        const eventWhenSplit = eventWhen.split("T");
+        const eventDate = eventWhenSplit[0];
+        const eventTime = eventWhenSplit[1];
+
         const eventCity = data[0].venue.city;
         const eventVenue = data[0].venue.name;
         const eventRegion = data[0].venue.region;
 
-        $(".when").text(eventTime);
+        $(".when").html(`${eventDate}<br/>${eventTime}`);
         $(".venue-name").html(`${eventCity}, ${eventRegion}<br/>${eventVenue}`);
 
         const map = `https://www.google.com/maps/embed/v1/place?key=AIzaSyBdNRsY4zEYnRfcQ0_ZVVd370D7yuApzhI&q=${eventVenue},${eventCity}"&maptype=roadmap`;
