@@ -152,7 +152,6 @@ $(document).ready(function () {
 		
 		const map = `https://www.google.com/maps/embed/v1/place?key=AIzaSyBdNRsY4zEYnRfcQ0_ZVVd370D7yuApzhI&q=${eventVenue},${eventCity}"&maptype=roadmap`;
 		
-		console.log(map);
 		
 		$(".popup-gmaps").attr("href", map);
 	}
