@@ -1,8 +1,8 @@
 # Band-search
 Thinkful (https://www.thinkful.com/) API portfolio project - a responsive app to easily find upcoming shows and directions to your favorite bands.
 
-![Opening Page Screenshot](https://github.com/LeahBorns/upbeat-atlas-artist-finder-songkick-api-capstone/blob/master/github-images/opening-page-screen-shot.png)
-???
+[Opening Page Screenshot](https://github.com/realnuno/band-search-api-capstone/blob/master/images/band-search-screen-shot.png)
+
 
 ## Introduction
 Finding upcoming shows is as easy as a click of a search button but getting to a show can be a nightmare. Not only is parking impossible but it puts so many cars on the road and increases carbon emissions. With Upbeat Atlas I wanted to create an easy way for event goers to locate their next show with a Google map to easily find directions along with a gentle nudge to consider taking a more sustainable way.
