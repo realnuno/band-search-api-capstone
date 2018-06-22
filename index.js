@@ -64,7 +64,7 @@ $(document).ready(function () {
         const thumbnailUrl = data.items[0].snippet.thumbnails.high.url
 
 
-        $(".popup-youtube").attr("href", videoUrl);
+        $(".popup-youtube").prop('hidden', false).attr("href", videoUrl);
         $(".thumbnail").attr("src", thumbnailUrl);
     }
 
@@ -100,7 +100,7 @@ $(document).ready(function () {
 
         const imgUrl = data.image_url;
 
-        $(".band-picture img").attr("src", imgUrl);
+        $(".band-picture img").prop('hidden', false).attr("src", imgUrl);
     }
 
 
@@ -149,13 +149,13 @@ $(document).ready(function () {
         const eventVenue = data[0].venue.name;
         const eventRegion = data[0].venue.region;
 
-        $(".when").html(`${eventDate}<br/>${eventTime}`);
-        $(".venue-name").html(`${eventCity}, ${eventRegion}<br/>${eventVenue}`);
+        $(".when").prop('hidden', false).html(`${eventDate}<br/>${eventTime}`);
+        $(".venue-name").prop('hidden', false).html(`${eventCity}, ${eventRegion}<br/>${eventVenue}`);
 
         const map = `https://www.google.com/maps/embed/v1/place?key=AIzaSyBdNRsY4zEYnRfcQ0_ZVVd370D7yuApzhI&q=${eventVenue},${eventCity}"&maptype=roadmap`;
 
 
-        $(".popup-gmaps").attr("href", map);
+        $(".popup-gmaps").prop('hidden', false).attr("href", map);
     }
 
 
