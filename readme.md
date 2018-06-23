@@ -1,7 +1,7 @@
 # Band-search
 Thinkful (https://www.thinkful.com/) API portfolio project - a responsive app to easily find upcoming shows and directions to your favorite bands.
 
-[Opening Page Screenshot](https://github.com/realnuno/band-search-api-capstone/blob/master/images/band-search-screen-shot.png?raw=true)
+![Opening Page Screenshot](https://raw.githubusercontent.com/realnuno/band-search-api-capstone/master/images/band-search-screen-shot.png)
 
 
 ## Introduction
