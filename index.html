@@ -24,31 +24,27 @@
         <div class="intro-text animated fadeInUpBig">
             <p>You can find and chase BANDS here!!</p>
         </div>
-        <div class="search-form">
-            <form>
-                <div id="container">
-                    <ion-icon class="icon-search" name="search"></ion-icon>
-                    <input type="text" class="js--scroll-to-results topcoat-text-input--large">
-                </div>
-            </form>
+        <div id="container">
+            <ion-icon class="icon-search" name="search"></ion-icon>
+            <input type="text" class="js--scroll-to-results topcoat-text-input--large">
         </div>
     </header>
 
-    <main role="main" class="js--results">
 
+    <main role="main" class="js--results" aria-live="assertive">
         <div class="row">
-            <div class="col-6">
+            <div class="col-6 top">
                 <div class="box effect1 youtube-video">
-                    <a class="popup-youtube" href=""><img class="thumbnail" src=""></a>
+                    <a class="popup-youtube" href=""><img class="thumbnail" src="images/Maroon5.jpg"></a>
                     <p>
-                        <ion-icon class="icon-youtube" name="logo-youtube"></ion-icon><span class="text-video">VEDIO</span></p>
+                        <ion-icon class="icon-youtube" name="logo-youtube"></ion-icon><span class="text-video">video</span></p>
                 </div>
             </div>
-            <div class="col-6">
+            <div class="col-6 top">
                 <div class="box effect1 band-picture">
-                    <img src="">
+                    <img class="picture" src="images/Maroon_5_concert.jpg">
                     <p>
-                        <ion-icon class="icon-images" name="images"></ion-icon><span class="text-picture">PICTURE</span></p>
+                        <ion-icon class="icon-images" name="images"></ion-icon><span class="text-picture">picture</span></p>
                 </div>
             </div>
         </div>
@@ -58,9 +54,8 @@
             <div class="col-6">
                 <div class="box effect1 concert-when">
                     <p>
-                        <ion-icon class="icon-time" name="time"></ion-icon><span class="text-when">WHEN</span></p>
+                        <ion-icon class="icon-time" name="time"></ion-icon><span class="text-when">when</span></p>
                     <div class="when">
-
                     </div>
                 </div>
             </div>
@@ -68,18 +63,48 @@
             <div class="col-6">
                 <div class="box effect1 venue-info">
                     <p>
-                        <ion-icon class="icon-map" name="map"></ion-icon><span class="text-where">WHERE</span></p>
+                        <ion-icon class="icon-map" name="map"></ion-icon><span class="text-where">where</span></p>
                     <div class="venue">
                         <a class="popup-gmaps" href=""><span class="venue-name"></span></a>
                     </div>
 
                 </div>
             </div>
-
-
         </div>
     </main>
 
+    <footer>
+        <div class="row">
+            <div class="col span-1-of-2">
+                <ul class="social-links">
+                    <li>
+                        <a href="https://www.facebook.com/profile.php?id=100007144038643">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/realnuno">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:inbeom918@gmail.com">
+                            <ion-icon name="mail"></ion-icon>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <p>
+                &copy;Ian Hwang<br/>This webpage was created by Ian Hwang.
+            </p>
+            <p>
+                Build with
+                <ion-icon name="heart" style=color:#ea0000; padding: 0 3px></ion-icon>in the beautiful city of Fairfax, VA, June 2018.
+            </p>
+        </div>
+    </footer>
 </body>
 
 </html>
