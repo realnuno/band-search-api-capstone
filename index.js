@@ -130,7 +130,6 @@ $(document).ready(function () {
         };
 
         $.ajax(settings);
-<<<<<<< HEAD
 		
 	}
 	
@@ -158,27 +157,6 @@ $(document).ready(function () {
 	
 	
 	
-	
-
-	
-	
-
-	
-	
-	
-	
-	
-	
-	
-	
-/****************POPUP ANIMATE*******************/
-	
-	
-=======
-
-    }
-
-
 
 
     function displayConcertInfo(data) {
@@ -214,7 +192,6 @@ $(document).ready(function () {
     /****************POPUP ANIMATE*******************/
 
 
->>>>>>> bfe2c711ac1dbd512760cfa5e8469fd4f62d21a6
     $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
         disableOn: 700,
         type: 'iframe',
