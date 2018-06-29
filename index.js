@@ -134,28 +134,6 @@ $(document).ready(function () {
 	}
 	
 	
-
-	
-	function displayConcertInfo(data){
-		
-		
-		
-		const eventTime = data[0].datetime;
-		const eventCity = data[0].venue.city;
-		const eventVenue = data[0].venue.name;
-		const eventRegion = data[0].venue.region;
-		
-		$(".when").text(eventTime);
-		$(".venue-name").html(`${eventCity}, ${eventRegion}<br/>${eventVenue}`);
-		
-		const map = `https://www.google.com/maps/embed/v1/place?key=AIzaSyBdNRsY4zEYnRfcQ0_ZVVd370D7yuApzhI&q=${eventVenue},${eventCity}"&maptype=roadmap`;
-		
-		
-		$(".popup-gmaps").attr("href", map);
-	}
-	
-	
-	
 	
 
 
